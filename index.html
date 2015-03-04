@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Pożyczki</title>
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<link href ="css/bootstrap.min.css" rel="stylesheet">
+	<link href ="css/bootstrap-slider.min.css" rel="stylesheet">
+	<link href ="css/prettify.css" rel="stylesheet">
+	<link href ="css/style.css" rel="stylesheet">
+<body>
+</head>
+
+ <div class = "navbar navbar-inverse navbar-static-top">  
+	<div class = "container">
+	
+		<a href="#" class = "navbar-brand">Pożyczki</a>  
+		
+		<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse"> 
+		    <span class = "icon-bar"></span>
+			<span class = "icon-bar"></span>
+			<span class = "icon-bar"></span>		
+		</button>
+		
+		<div class = "collapse navbar-collapse navHeaderCollapse"> 
+		 <ul class = "nav navbar-nav navbar-right">
+		 
+			<li class = "active"><a href = "#">Strona główna</a></li> 
+			<li><a href = "#">Jak to działa</a></li>
+			<li><a href = "#">O nas</a></li>
+			<li><a href = "#">Kontakt</a></li>
+			
+			<li class = "dropdown">
+				<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Profil<b class = "caret"></b></a>
+				<ul class = "dropdown-menu">
+				
+					<li><a href = "#">Zaloguj</a></li>
+					</ul>
+				
+				</li>
+		 </ul>
+		
+		
+		</div>
+	
+	
+	</div>
+ 
+ </div>
+ <div class="bg"></div>
+ <div class = "container">
+ 
+	<div class = "jumbotron text-center">
+	 <h1>Pożyczki</h1>
+	 <p>Weź pożyczkę, ułatw sobie życie.</p>
+<p style="padding-top:20px">	 	<b style="padding-right:20px">100zł</b>
+<input id="moneySlider" data-slider-id='ex1Slider' type="text" data-slider-ticks="[100, 1000]" data-slider-min="100" 
+	data-slider-max="1000" data-slider-step="10" data-slider-value="100"/>
+ <b style="padding-left:20px">1000zł</b></p>
+ 
+<p> <a href = "" class = "navbar-btn btn btn-danger btn" data-toggle="modal" data-target="#myModal">Dalej</a> </p>
+	</div>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Formularz</h4>
+      </div>
+      <div class="modal-body">
+          <div class = "container"> <div class = "col-md-10">
+ <div id="rootwizard">
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <div class="container">
+	<ul>
+	  	<li><a href="#tab1" data-toggle="tab">1</a></li>
+		<li><a href="#tab2" data-toggle="tab">2</a></li>
+		<li><a href="#tab3" data-toggle="tab">3</a></li>
+	</ul>
+	 </div>
+	  </div>
+	</div>
+	<div class="tab-content">
+	    <div class="tab-pane" id="tab1">
+		
+		
+	<div class= "col-md-10">
+		<h3>Imię i Nazwisko</h3>
+		<form role="form">
+    <div class="form-group">
+      <label for="imie">Imię</label>
+      <input type="text" class="form-control" id="imie" placeholder="Imię">
+    </div>
+    <div class="form-group">
+      <label for="nazwisko">Nazwisko</label>
+      <input type="text" class="form-control" id="nazwisko" placeholder="Nazwisko">
+    </div>
+	
+	<div class="form-group">
+      <label for="pesel">PESEL</label>
+      <input type="text" class="form-control" id="pesel" placeholder="PESEL">
+    </div>
+	
+	<div class="form-group">
+  <label for="sel1">Wykształcenie</label>
+  <select class="form-control" id="sel1">
+    <option>Podstawowe</option>
+    <option>Średnie</option>
+    <option>Wyższe</option>
+  </select>
+</div>
+	
+	
+
+
+	
+	</div>
+	     <p class="krok">krok 1 z 3</p>
+	    </div>
+		
+		
+	    <div class="tab-pane" id="tab2">
+				<div class= "col-md-10">
+		<h3>Adres zameldowania</h3>
+		<form role="form">
+    <div class="form-group">
+      <label for="kodPocztowy">Kod pocztowy</label>
+      <input type="text" class="form-control" id="kodPocztowy" placeholder="Kod pocztowy">
+    </div>
+    <div class="form-group">
+      <label for="miejscowosc">Miejscowość</label>
+      <input type="text" class="form-control" id="miejscowosc" placeholder="Miejscowość">
+    </div>
+	    <div class="form-group">
+      <label for="ulica">Ulica</label>
+      <input type="text" class="form-control" id="ulica" placeholder="Ulica">
+    </div>
+	
+	    <div class="form-group">
+      <label for="nrDomu">Numer domu</label>
+      <input type="text" class="form-control" id="nrDomu" placeholder="Numer domu">
+    </div>
+	
+	    <div class="form-group">
+      <label for="nrMieszkania">Numer mieszkania</label>
+      <input type="text" class="form-control" id="nrMieszkania" placeholder="Numer mieszkania">
+    </div>
+	
+	<h4>Czy adres do korespondencji jest ten sam, co adres zameldowania?</h4>
+	
+	<div class="radio radio_tak">
+		<label><input type="radio" name="optradio" checked>Tak</label>
+	</div>
+	<div class="radio radio_nie">
+		<label><input class="nie" type="radio" name="optradio">Nie</label>
+	</div>
+	
+		<div class="form-group hide_me">
+      <label for="kodPocztowy">Kod pocztowy</label>
+      <input type="text" class="form-control" id="kodPocztowy" placeholder="Kod pocztowy">
+    </div>
+    <div class="form-group hide_me">
+      <label for="miejscowosc">Miejscowość</label>
+      <input type="text" class="form-control" id="miejscowosc" placeholder="Miejscowość">
+    </div>
+	    <div class="form-group hide_me">
+      <label for="ulica">Ulica</label>
+      <input type="text" class="form-control" id="ulica" placeholder="Ulica">
+    </div>
+	
+	    <div class="form-group hide_me">
+      <label for="nrDomu">Numer domu</label>
+      <input type="text" class="form-control" id="nrDomu" placeholder="Numer domu">
+    </div>
+	
+	    <div class="form-group hide_me">
+      <label for="nrMieszkania">Numer mieszkania</label>
+      <input type="text" class="form-control" id="nrMieszkania" placeholder="Numer mieszkania">
+    </div>
+	
+
+
+	
+	</div>
+		<p class="krok">krok 2 z 3</p>
+	    </div>
+		
+		
+		
+		<div class="tab-pane" id="tab3">
+		<div class= "col-md-10">
+		<h3>Dane konta</h3>
+<div class="form-group">
+      <label class="control-label" for="email">Email:</label>
+        <input type="text" class="form-control" id="email" placeholder="e-mail">
+    </div>
+    <div class="form-group">
+      <label class="control-label" for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+
+		
+		</div>
+		
+		<p class="krok">krok 3 z 3</p>
+	    </div>
+		<ul class="pager wizard">
+			<!-- <li class="previous first"><a href="javascript:;">First</a></li> -->
+			<li class="previous"><a href="javascript:;">Poprzedni</a></li>
+			<!-- <li class="next last"><a href="javascript:;">Last</a></li> -->
+		  	<li class="next"><a href="javascript:;">Następny</a></li>
+			<li class="finish"><a href="javascript:;">Złóż wniosek</a></li>
+		</ul>
+	</div>
+</div>
+ </div>
+ </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+ 
+ </div>
+ 
+ <div class = "container">
+ 
+ <div class = "row">
+	<div class = "col-md-3">
+	
+		<h3><a href = "#">asdadasdasdad</a></h3>
+		<p>LAKLSJFKLASJF LKASFJLAKSJFKL LAKSJFLKASFJ LAKSJFLKASJF LKASJFLKASFJ</p>
+		<a href = "#" class = "btn btn-default"> read more </a>
+	</div>
+ 
+ 	<div class = "col-md-3">
+	
+		<h3><a href = "#">asdadasdasdad</a></h3>
+		<p>LAKLSJFKLASJF LKASFJLAKSJFKL LAKSJFLKASFJ LAKSJFLKASJF LKASJFLKASFJ</p>
+		<a href = "#" class = "btn btn-default"> read more </a>
+	</div>
+	
+		<div class = "col-md-3">
+	
+		<h3><a href = "#">asdadasdasdad</a></h3>
+		<p>LAKLSJFKLASJF LKASFJLAKSJFKL LAKSJFLKASFJ LAKSJFLKASJF LKASJFLKASFJ</p>
+		<a href = "#" class = "btn btn-default"> read more </a>
+	</div>
+	
+		<div class = "col-md-3">
+	
+		<h3><a href = "#">asdadasdasdad</a></h3>
+		<p>LAKLSJFKLASJF LKASFJLAKSJFKL LAKSJFLKASFJ LAKSJFLKASJF LKASJFLKASFJ</p>
+		<a href = "#" class = "btn btn-default"> read more </a>
+	</div>
+ 
+ 
+ 
+ </div>
+ 
+ </div>
+
+
+
+ 
+ 
+ <div class = "navbar navbar-default navbar-fixed-bottom">
+ 
+ <div class = "container">
+ 
+
+
+	<p class = "navbar-text pull-left"> Szybkie pożyczki pozabankowe przez Internet - 
+	bez wychodzenia z domu. Po zaakceptowaniu wniosku, gotówka pojawi się na Twoim koncie nawet w 15 minut! 
+	Pożyczki to alternatywa dla chwilówek – pożyczamy nawet na 60 dni, współpracujemy z BIK i ograniczamy 
+	liczbę przedłużeń pożyczki a rzetelnym klientom proponujemy pożyczki ratalne i obniżone koszty. Wszelkich 
+	formalności dokonasz online, jedynym potrzebnym dokumentem jest Twój dowód osobisty. 
+</p>
+ </div>
+ 
+ 
+ </div>
+ 
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="jquery/js/jquery-1.7.1.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="bootstrap-slider.min.js"></script>
+  <script src="js/jquery.bootstrap.wizard.js"></script>
+  <script src="js/prettify.js"></script>
+  <script src="js/moj.js"></script>
+  
+</body>
+
+</html>
